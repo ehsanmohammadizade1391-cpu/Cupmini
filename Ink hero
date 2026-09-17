@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width,
+             initial-scale=1.0,
+             maximum-scale=1.0,
+             user-scalable=no"
+  >
+
+  <meta name="theme-color" content="#17130f">
+
+  <title>Ink Hero - Run & Gun</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main id="game-container">
+
+    <!-- Game Canvas -->
+    <canvas
+      id="game"
+      width="1280"
+      height="720">
+    </canvas>
+
+    <!-- Main Menu -->
+    <div id="menu" class="overlay">
+
+      <h1>INK HERO</h1>
+
+      <p>
+        Original HTML5 Run & Gun Game
+      </p>
+
+      <button id="start">
+        START GAME
+      </button>
+
+      <p class="controls">
+        PC: A / D · Space · J · K · L · I
+      </p>
+
+      <p class="mobile-info">
+        Android: Use the touch buttons
+      </p>
+
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="touchControls">
+
+      <div class="movement-controls">
+
+        <button
+          class="touch-button"
+          data-action="left">
+          ◀
+        </button>
+
+        <button
+          class="touch-button"
+          data-action="right">
+          ▶
+        </button>
+
+      </div>
+
+      <div class="action-controls">
+
+        <button
+          class="touch-button"
+          data-action="jump">
+          JUMP
+        </button>
+
+        <button
+          class="touch-button shoot"
+          data-action="shoot">
+          ●
+        </button>
+
+        <button
+          class="touch-button"
+          data-action="dash">
+          DASH
+        </button>
+
+        <button
+          class="touch-button"
+          data-action="parry">
+          PARRY
+        </button>
+
+        <button
+          class="touch-button"
+          data-action="super">
+          SUPER
+        </button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Game JavaScript -->
+  <script src="game.js"></script>
+
+</body>
+</html>
